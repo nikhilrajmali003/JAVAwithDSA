@@ -19,3 +19,18 @@ public class pract5 {
         
     }
 }
+
+fvdsss
+
+
+
+
+fabbb
+ab
+abe
+
+erbt
+eab
+
+b
+r
