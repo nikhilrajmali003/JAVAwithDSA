@@ -1,3 +1,6 @@
+
+import java.util.Arrays;
+
 // https://www.geeksforgeeks.org/problems/count-digits5716/0
 /*
  * Given a positive integer n, count the number of digits in n that divide n evenly (i.e., without leaving a remainder). Return the total number of such digits.
@@ -24,6 +27,7 @@ public class pract8 {
         // System.out.println(palindromno(121));  // Output: true
         // printallDivisor(34);
         primeno(25);
+        seiveAlgo(40);
 
     }
     static void calculatenoofdidits(int n){
@@ -95,6 +99,23 @@ public class pract8 {
     }
 
     static void seiveAlgo(int n){
+        boolean arr[]=new boolean[n+1];
+        Arrays.fill(arr,true);
+        int c=2;
+        while(c<=n){    
+            if(arr[c]==true){
+                for(int i=c+c;i<=n;i+=c){
+                    arr[i]=false;
+                }   
+            }
+            c++;
+        }
+        for(int i=2;i<=n;i++){
+            System.out.println(i+" :- "+arr[i]);
+        }
           
+    }
+    static void LCM(int n){
+        
     }
 }   
